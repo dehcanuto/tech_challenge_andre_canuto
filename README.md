@@ -1,3 +1,10 @@
+![WedClass](.github/logo-oncar.svg)
+
+![Version](https://img.shields.io/badge/1.0.0-beta?label=version)
+![WedClass](https://img.shields.io/badge/powered_by-OnCar-29a1ff)
+![NextJS version](https://img.shields.io/badge/NextJS-14.1.0-black?style=flat-square&logo=next.js&logoColor=white)
+![NestJS version](https://img.shields.io/badge/NestJS-10.0.0-e0244f.svg?style=flat-square&logo=nestjs)
+
 # ONCar - Tech Challenge
 
 A **ONCar** está em busca de pessoas incríveis que integrem nossa equipe para criarmos incríveis produtos digitais, e gostaríamos de ter você aqui conosco.
@@ -5,6 +12,12 @@ A **ONCar** está em busca de pessoas incríveis que integrem nossa equipe para 
 Para iniciar o processo, pedimos um teste que não vai tomar muito do seu tempo e nos dará uma perspectiva da sua forma de trabalhar. Queremos entender seu nível de habilidade em todas as áreas envolvidas na construção de um projeto: **Front e Back.**
 
 Você não precisa entregar ambos, mas qualquer adicional as suas habilidades específicas é interessante.
+
+## 🛠️ Desenvolvido com
+*  [NodeJS](https://nodejs.org/en/docs/) - Ambiente de execução JavaScript
+*  [NextJS](https://nextjs.org/docs) - Framework web TypeScript para front-end
+*  [NestJS](https://docs.nestjs.com/) - Framework TypeScript para back-end
+*  [Tailwind CSS](https://tailwindcss.com/docs) - Framework para estilização
 
 # Requisitos do desafio
 
@@ -58,11 +71,7 @@ O **Back-End** do projeto deverá ser feito em **Golang ou Node.JS**, utilizando
 
 O **Front-End** deverá ser feito a seu critério e justificando o porque da solução escolhida, nós achamos o React interessante.
 
-
-
 Qualquer dúvida sobre os requisitos, você pode enviar um e-mail para lucas.melo@oncar.com.br
-
-
 
 # Como fazer?
 
