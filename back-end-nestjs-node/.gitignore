@@ -2,6 +2,7 @@
 /dist
 /node_modules
 /build
+/back-end-nestjs-node/node_modules
 
 # Logs
 logs
