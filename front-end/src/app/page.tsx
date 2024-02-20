@@ -1,5 +1,5 @@
-import ButtonLink from "@/components/atoms/Button";
-import Image from "next/image";
+import BannerHome from "@/components/organisms/BannerHome";
+import RecentCarsFlow from "@/components/organisms/RecentCarsFlow";
 
 export default function Home() {
   return (
@@ -19,28 +19,8 @@ export default function Home() {
           <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"></div>
         </div>
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 place-items-center py-16 gap-4">
-            <div>
-              <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Todo mundo tem crédito na onCar</h1>
-              <p className="mt-4 text-lg leading-8 text-gray-300">Negativado ou não, aqui você pode comprar.</p>
-              <div className="mt-10 flex items-center gap-x-6">
-                <ButtonLink url="#">
-                  Encontre um veículo
-                </ButtonLink>
-                <a href="#" className="leading-6 text-white">Saiba mais</a>
-              </div>
-            </div>
-            <div>
-              <Image
-                src="/images/oncar-home-banner-car.png"
-                alt="OnCar Logo"
-                className="w-auto"
-                width={920}
-                height={442}
-                priority
-              />
-            </div>
-          </div>
+          <BannerHome />
+          <RecentCarsFlow />
         </div>
       </div>
   );
