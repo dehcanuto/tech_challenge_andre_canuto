@@ -1,5 +1,5 @@
 import BannerHome from "@/components/organisms/BannerHome";
-import RecentCarsFlow from "@/components/organisms/RecentCarsFlow";
+import CarsFlowContent from "@/components/organisms/CarsFlowContent";
 
 export default function Home() {
   return (
@@ -20,7 +20,11 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-7xl px-6">
           <BannerHome />
-          <RecentCarsFlow />
+          <CarsFlowContent
+            title="Adicionados recentemente"
+            description="Confira as novidades do nosso estoque."
+            request="/cars?limit=4"
+          />
         </div>
       </div>
   );
