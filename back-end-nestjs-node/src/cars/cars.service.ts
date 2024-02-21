@@ -18,10 +18,10 @@ export class CarsService {
     return this.repo.save(data);
   }
 
-  findAll() {
+  findAll(limit: number = 16) {
     return this.repo.find({
       skip: 0,
-      take: 10,
+      take: limit,
     });
   }
 

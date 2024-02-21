@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
               protocol: 'https',
-              hostname: 'www.globoveiculos.com',
+              hostname: 'image.webmotors.com.br',
               port: '',
             },
         ],
