@@ -1,4 +1,4 @@
-import { IsString } from 'class-validator';
+import { IsBoolean, IsNumber, IsString } from 'class-validator';
 
 export class CreateCreditDto {
   @IsString()
@@ -14,8 +14,29 @@ export class CreateCreditDto {
   cpf: string;
 
   @IsString()
-  score: string;
+  car_uuid: string;
 
-  @IsString()
+  @IsNumber()
+  monthly_income: number;
+
+  @IsNumber()
+  score: number;
+
+  @IsBoolean()
   aproved: boolean;
+
+  @IsNumber()
+  entry_percent: number;
+
+  @IsNumber()
+  entry_value: number;
+
+  @IsNumber()
+  financing_value: number;
+
+  @IsNumber()
+  installments_value: number;
+
+  @IsNumber()
+  installments_time: number;
 }

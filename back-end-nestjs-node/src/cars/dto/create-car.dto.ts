@@ -21,4 +21,7 @@ export class CreateCarDto {
 
   @IsString()
   price: number;
+
+  @IsString()
+  uuid: string;
 }

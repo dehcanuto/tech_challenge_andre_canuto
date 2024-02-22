@@ -7,4 +7,5 @@ export interface CardCarPropType {
     km_age: string
     model_year: string
     price: string
+    disabled?: boolean
 }

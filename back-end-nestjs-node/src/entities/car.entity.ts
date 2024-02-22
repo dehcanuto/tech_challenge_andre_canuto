@@ -31,6 +31,9 @@ export class CarEntity {
   @Column('decimal', { precision: 8, scale: 2 })
   price: number;
 
+  @Column()
+  uuid: string;
+
   @CreateDateColumn({
     type: 'timestamp',
     default: () => 'CURRENT_TIMESTAMP(6)',

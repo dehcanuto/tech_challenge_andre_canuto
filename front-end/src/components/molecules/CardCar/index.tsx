@@ -3,14 +3,14 @@ import Image from "next/image";
 import ButtonLink from "@/components/atoms/ButtonLink";
 import { CardCarPropType } from "./types";
 
-const CardCar = ({ id, title, model, thumbnail, brand, km_age, model_year, price }: CardCarPropType) => {
+const CardCar = ({ id, title, model, thumbnail, brand, km_age, model_year, price, disabled = false }: CardCarPropType) => {
     const formatter = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'BRL',
     });
 
     return (
-        <div className="max-w-xs bg-gray-800 font-semibold rounded-3xl shadow-xl">
+        <div className="h-fit bg-gray-800 font-semibold rounded-3xl shadow-xl">
             <div className="h-52 bg-gray-600 overflow-hidden rounded-t-3xl">
                 <Image
                     src={thumbnail}
@@ -43,12 +43,14 @@ const CardCar = ({ id, title, model, thumbnail, brand, km_age, model_year, price
                         </span>
                     </div>
                 </div>
-                <span className="text-3xl font-bold text-white">
+                <span className="text-3xl font-bold text-cyan-200">
                     {formatter.format(Number(price))}
                 </span>
-                <ButtonLink url={`/car/${id}`}>
-                    Simular crédito
-                </ButtonLink>
+                {!disabled && (
+                    <ButtonLink url={`/car/${id}`}>
+                        Simular crédito
+                    </ButtonLink>
+                )}
 			</div>
         </div>
     )

@@ -13,7 +13,16 @@ export class CarsService {
     private readonly repo: Repository<CarEntity>,
   ) {}
 
+  generateUUID() {
+    return 'xxxxxxxxxx-4xxyxxxxxxx'.replace(/[xy]/g, (c) => {
+      const r =
+        (Math.floor(new Date().getTime() / 16) + Math.random() * 16) % 16 | 0;
+      return (c == 'x' ? r : (r & 0x3) | 0x8).toString(16);
+    });
+  }
+
   create(data: CreateCarDto) {
+    data.uuid = this.generateUUID();
     this.repo.create(data);
     return this.repo.save(data);
   }
