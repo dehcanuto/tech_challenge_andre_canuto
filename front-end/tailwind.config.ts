@@ -12,7 +12,7 @@ const config: Config = {
         primary: {
             DEFAULT: '#5669f7',
         },
-        success: '#5fe07e',
+        success: '#50d06e',
         warning: '#fae65c',
         error: '#fa5c7c',
       },

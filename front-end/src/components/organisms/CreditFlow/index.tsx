@@ -24,7 +24,7 @@ const CreditFlow = ({ slug }: { slug: string }) => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {loading ? <SkeletonCardCar /> : cars && <CardCar {...cars} disabled />}
-        <CreditSimulator />
+        <CreditSimulator uuid={slug} />
       </div>
     )
 }

@@ -1,5 +1,5 @@
 export interface CardCarPropType {
-    id: number
+    uuid: string
     title: string
     model: string
     thumbnail: string

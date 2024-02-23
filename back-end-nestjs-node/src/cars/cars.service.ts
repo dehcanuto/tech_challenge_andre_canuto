@@ -34,13 +34,12 @@ export class CarsService {
     });
   }
 
-  findOne(id: number) {
-    return this.repo.findOneBy({ id });
+  findOne(uuid: string) {
+    return this.repo.findOneBy({ uuid });
   }
 
   update(id: number, data: UpdateCarDto) {
-    this.repo.update(id, data);
-    return this.findOne(id);
+    return this.repo.update(id, data);
   }
 
   remove(id: number) {

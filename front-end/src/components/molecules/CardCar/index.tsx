@@ -2,13 +2,9 @@ import Image from "next/image";
 
 import ButtonLink from "@/components/atoms/ButtonLink";
 import { CardCarPropType } from "./types";
+import { moneyFormatter } from "@/utils";
 
-const CardCar = ({ id, title, model, thumbnail, brand, km_age, model_year, price, disabled = false }: CardCarPropType) => {
-    const formatter = new Intl.NumberFormat('pt-BR', {
-        style: 'currency',
-        currency: 'BRL',
-    });
-
+const CardCar = ({ uuid, title, model, thumbnail, brand, km_age, model_year, price, disabled = false }: CardCarPropType) => {
     return (
         <div className="h-fit bg-gray-800 font-semibold rounded-3xl shadow-xl">
             <div className="h-52 bg-gray-600 overflow-hidden rounded-t-3xl">
@@ -44,10 +40,10 @@ const CardCar = ({ id, title, model, thumbnail, brand, km_age, model_year, price
                     </div>
                 </div>
                 <span className="text-3xl font-bold text-cyan-200">
-                    {formatter.format(Number(price))}
+                    {moneyFormatter(price)}
                 </span>
                 {!disabled && (
-                    <ButtonLink url={`/car/${id}`}>
+                    <ButtonLink url={`/car/${uuid}`}>
                         Simular crédito
                     </ButtonLink>
                 )}
