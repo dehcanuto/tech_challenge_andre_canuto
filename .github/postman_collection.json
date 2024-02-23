@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "22ef54d5-79dd-4281-ad40-28ee5d4e7a5a",
+		"name": "OnCar Cruds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14253949"
+	},
+	"item": [
+		{
+			"name": "List Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tech-challenge-andre-canuto-wlfc.vercel.app/cars",
+					"protocol": "https",
+					"host": [
+						"tech-challenge-andre-canuto-wlfc",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show One Car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tech-challenge-andre-canuto-wlfc.vercel.app/cars/0084ed171f-4759829718f",
+					"protocol": "https",
+					"host": [
+						"tech-challenge-andre-canuto-wlfc",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"cars",
+						"0084ed171f-4759829718f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Corolla Teste",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "2.0 VVT-IE FLEX ALTIS DIRECT SHIFT",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "Toyota",
+							"type": "text"
+						},
+						{
+							"key": "km_age",
+							"value": "52.270",
+							"type": "text"
+						},
+						{
+							"key": "model_year",
+							"value": "2022/2023",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "145890",
+							"type": "text"
+						},
+						{
+							"key": "thumbnail",
+							"value": "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2024/202402/20240207/toyota-corolla-2.0-vvtie-flex-altis-direct-shift-wmimagem1031002796.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tech-challenge-andre-canuto-wlfc.vercel.app/cars",
+					"protocol": "https",
+					"host": [
+						"tech-challenge-andre-canuto-wlfc",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tech-challenge-andre-canuto-wlfc.vercel.app/cars/1",
+					"protocol": "https",
+					"host": [
+						"tech-challenge-andre-canuto-wlfc",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Credit Quotations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tech-challenge-andre-canuto-wlfc.vercel.app/credit",
+					"protocol": "https",
+					"host": [
+						"tech-challenge-andre-canuto-wlfc",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Credit Quotations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "johndoe@exemple.com",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "183.873.700-61",
+							"type": "text"
+						},
+						{
+							"key": "car_uuid",
+							"value": "ea456260af-460a490c02e",
+							"type": "text"
+						},
+						{
+							"key": "monthly_income",
+							"value": "9000",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "(34) 6550-7453",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://tech-challenge-andre-canuto-wlfc.vercel.app/credit",
+					"protocol": "https",
+					"host": [
+						"tech-challenge-andre-canuto-wlfc",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"credit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

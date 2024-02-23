@@ -28,9 +28,7 @@ O projeto foi totalmente hospedado no Vercel.
 
 ## Guia da API
 
-Voce pode baixar o Postman ou seguir o guia abaixo:
-
-
+Voce pode baixar o [Postman](.github/postman_collection.json "download").
 
 # Requisitos do desafio
 
