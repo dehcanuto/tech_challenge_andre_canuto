@@ -19,6 +19,19 @@ Você não precisa entregar ambos, mas qualquer adicional as suas habilidades es
 *  [NestJS](https://docs.nestjs.com/) - Framework TypeScript para back-end
 *  [Tailwind CSS](https://tailwindcss.com/docs) - Framework para estilização
 
+## Build
+
+O projeto foi totalmente hospedado no Vercel.
+
+- [Frontend](https://tech-challenge-andre-canuto.vercel.app/)
+- [Backend NestJS](https://tech-challenge-andre-canuto-wlfc.vercel.app/)
+
+## Guia da API
+
+Voce pode baixar o Postman ou seguir o guia abaixo:
+
+
+
 # Requisitos do desafio
 
 Crie uma aplicação que permitirá a gestão de veículos com suas determinadas caracteristicas como:
